@@ -34,7 +34,7 @@ Content-Type: application/json
 ]
 ```
 
-![GET /tasks](https://i.imgur.com/XYZ1234.png)
+![GET /tasks - List all tasks](screenshots/get-tasks.png)
 
 ### 2. POST `/tasks` (Create a new task)
 ```
@@ -44,7 +44,7 @@ Content-Type: application/json
 {"title": "Naming mg git message"}
 ```
 
-![POST /tasks](https://i.imgur.com/ABC5678.png)
+![POST /tasks - Create a new task](screenshots/post-task.png)
 
 ### 3. GET `/tasks/:id` (Get a single task)
 ```
@@ -54,7 +54,7 @@ Content-Type: application/json
 {"id": 1, "title": "Learn Express", "done": false}
 ```
 
-![GET /tasks/:id](https://i.imgur.com/DEF9012.png)
+![GET /tasks/:id - Get a single task](screenshots/get-task-by-id.png)
 
 ### 4. PUT `/tasks/:id` (Update a task)
 ```
@@ -64,18 +64,18 @@ Content-Type: application/json
 {"id": 2, "title": "Pooping in the toilet", "done": false}
 ```
 
-![PUT /tasks/:id](https://i.imgur.com/GHI3456.png)
+![PUT /tasks/:id - Update a task](screenshots/put-task.png)
 
 ### 5. DELETE `/tasks/:id` (Delete a task)
 ```
 HTTP/1.1 204 No Content
 ```
 
-![DELETE /tasks/:id](https://i.imgur.com/JKL7890.png)
+![DELETE /tasks/:id - Delete a task](screenshots/delete-task.png)
 
 ## Swagger UI
 
-![Swagger UI](https://i.imgur.com/MNO1234.png)
+![Swagger UI](screenshots/swagger-ui.png)
 
 Try it out at **http://localhost:3000/docs** for interactive testing.
 
