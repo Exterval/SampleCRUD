@@ -14,11 +14,13 @@ The server starts on **http://localhost:3000**. Open **http://localhost:3000/doc
 
 | Method   | Endpoint      | Description              | Body                        |
 |----------|---------------|--------------------------|-----------------------------|
-| `GET`    | `/tasks`      | List all tasks           | —                           |
-| `GET`    | `/tasks/:id`  | Get a task by ID         | —                           |
-| `POST`   | `/tasks`      | Create a new task        | `{ "title": "Buy milk" }`   |
-| `PUT`    | `/tasks/:id`  | Update a task            | `{ "title": "...", "done": true }` |
-| `DELETE` | `/tasks/:id`  | Delete a task            | —                           |
+| Method   | Endpoint      | Description              | Request Body                | Response Body               |
+|----------|---------------|--------------------------|-----------------------------|-----------------------------|
+| `GET`    | `/tasks`      | List all tasks           | —                           | `[{ id, title, done }, ...]` |
+| `GET`    | `/tasks/:id`  | Get a task by ID         | —                           | `{ id, title, done }`       |
+| `POST`   | `/tasks`      | Create a new task        | `{ "title": "Buy milk" }`   | `{ "title": "..." }`        |
+| `PUT`    | `/tasks/:id`  | Update a task            | `{ "title": "...", "done": true }` | `{ id, title, done }` |
+| `DELETE` | `/tasks/:id`  | Delete a task            | —                           | —                           |
 
 ## Example Outputs
 
